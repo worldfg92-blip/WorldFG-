@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WorldFG V2</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<h1>WorldFG V2</h1>
+<nav>
+<button onclick="showPage('feed')">Feed</button>
+<button onclick="showPage('stories')">Stories</button>
+<button onclick="showPage('marketplace')">Marketplace</button>
+<button onclick="showPage('messenger')">Messenger</button>
+<button onclick="showPage('profile')">Profile</button>
+</nav>
+</header>
+
+<main>
+<section id="feed" class="page">
+<h2>Home Feed</h2>
+<textarea id="postText" placeholder="What's on your mind?"></textarea>
+<button onclick="addPost()">Post</button>
+<div id="posts"></div>
+</section>
+
+<section id="stories" class="page" style="display:none">
+<h2>Stories</h2>
+<p>Story upload module placeholder.</p>
+</section>
+
+<section id="marketplace" class="page" style="display:none">
+<h2>Marketplace</h2>
+<p>Buy and sell items.</p>
+</section>
+
+<section id="messenger" class="page" style="display:none">
+<h2>Messenger</h2>
+<p>Messenger UI starter.</p>
+</section>
+
+<section id="profile" class="page" style="display:none">
+<h2>Profile</h2>
+<p>Verification request and profile settings starter.</p>
+</section>
+</main>
+
+<script src="js/app.js"></script>
+</body>
+</html>
